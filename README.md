@@ -1,0 +1,1 @@
+# spfx-v1.17.2-devcontainer-template
