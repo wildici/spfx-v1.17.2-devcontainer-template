@@ -1,0 +1,15 @@
+
+{
+  "name": "SPFx Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:16.18.1",
+  "features": {},
+  "postCreateCommand": "chmod +x .devcontainer/spfx-setup.sh && ./.devcontainer/spfx-setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
