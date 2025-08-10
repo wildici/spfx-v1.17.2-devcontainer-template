@@ -1,8 +1,11 @@
-
 {
   "name": "SPFx Dev Container",
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:16.18.1",
-  "features": {},
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "16.18.1"
+    }
+  },
   "postCreateCommand": "chmod +x .devcontainer/spfx-setup.sh && ./.devcontainer/spfx-setup.sh",
   "customizations": {
     "vscode": {
