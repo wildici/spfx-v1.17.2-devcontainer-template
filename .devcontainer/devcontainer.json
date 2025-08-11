@@ -6,6 +6,21 @@
       "version": "16.18.1"
     }
   },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		4321,
+		35729
+	],
+	"portsAttributes": {
+		"4321": {
+			"label": "Manifest",
+			"requireLocalPort": true
+		},
+		"35729": {
+			"label": "LiveReload",
+			"requireLocalPort": true
+		}
+	},
   "postCreateCommand": "chmod +x .devcontainer/spfx-setup.sh && ./.devcontainer/spfx-setup.sh",
   "customizations": {
     "vscode": {
